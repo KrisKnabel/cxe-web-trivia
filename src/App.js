@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import TextField from '@material-ui/core/TextField';
+
 
 export default function App() {
 	const questions = [
@@ -58,7 +60,10 @@ export default function App() {
 	};
 	return (
 		<div className='app'>
-			{showScore ? (
+			<h1>WELCOME TO CXE WEB TRIVIA</h1>
+
+			<TextField id="standard-basic" fullWidth label="Please type your answer here" />
+			{/* {showScore ? (
 				<div className='score-section'>
 					You scored {score} out of {questions.length}
 				</div>
@@ -76,7 +81,7 @@ export default function App() {
 						))}
 					</div>
 				</>
-			)}
+			)} */}
 		</div>
 	);
 }

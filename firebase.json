@@ -4,6 +4,7 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
+    "site": "knabel-test-site",
     "public": "public",
     "ignore": [
       "firebase.json",
